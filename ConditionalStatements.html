@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <!-- <script>
+        // Conditional Statements
+        let age = prompt("Please enter your age:");
+        if (age >= 18)
+    {
+        document.getElementById("demo").innerHTML=("You can vote!")
+    }
+    else{
+        document.getElementById("demo").innerHTML=("You are not elegible to cast vote.")
+    }
+    </script> -->
+
+    <!-- <script>
+        let mode = "dark";
+        let color;
+        
+        // Conditional logic for setting color based on mode
+        if (mode === "dark") {
+            color = "black";
+        } else if (mode === "light") {
+            color = "white";
+        }
+        
+        // Display the selected color
+        document.getElementById("demo").innerHTML = color;
+    </script> -->
+
+
+    <script>
+
+        let age=prompt("Please enter your age:");
+        if (age <18)
+    {
+        document.getElementById("demo").innerHTML="junior";
+    }
+    else if (age > 60)
+    {
+        document.getElementById("demo").innerHTML="senior";
+    }
+    else
+    {
+        document.getElementById("demo").innerHTML="middle";
+    }
+    </script>
+  </body>
+</html>

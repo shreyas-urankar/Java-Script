@@ -1,2 +1,2 @@
 # JavaScript
- JavaScript(JS)
+ JavaScript

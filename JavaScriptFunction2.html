@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    Name:<input id="my" type="text" value="Shreyas">
+    <br>
+    <p>Click the button to change the value of the text field.</p>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Try it.</button>
+    <!-- <script>
+        function myFunction(){
+            document.getElementById("my").value="Urankar";
+        } 
+    </script>-->
+    <script>
+        function myFunction() {
+        var myVariable = document.getElementById("my").value;
+         document.getElementById("demo").innerHTML=myVariable ;
+        }
+        </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <div id="demo"></div> <!-- Moved div inside body -->
+    
+    <script>
+    var a = 5;
+    var b = 2;
+    console.log("a =",a, "& b =",b);
+    console.log("a+b =", a + b);
+    console.log("a-b =", a - b);
+    console.log("a*b =", a * b);
+    console.log("a/b =", a / b);
+    console.log("a%b =", a % b);
+    console.log("a**b =", a ** b);
+
+    // Unary Operators (Increment and Decrement)
+    var a = 5;
+    var b = 2;
+    console.log("a =",a, "& b =",b);
+    a = a + 1;
+    console.log("a =", a);
+
+    // Assignment Operators
+    a += 4; // a = a + 4
+    console.log("a =", a);
+
+    a -= 4; // a = a - 4
+    console.log("a =", a);
+
+    a *= 4; // a = a * 4
+    console.log("a =", a);
+
+    a /= 4; // a = a / 4
+    console.log("a =", a);
+
+    a %= 4; // a = a % 4
+    console.log("a =", a);
+
+    a **= 4; // a = a ** 4 
+    console.log("a =", a);
+
+    // Comparison Operators
+    let c = 5;
+    let d = 5;
+    let e = 2;
+
+    // Display the first output
+    document.getElementById("demo").innerHTML = "5 != 5: " + (c != d) + "<br>"; // Add <br> to prevent overwriting the next content
+
+    
+  </script>
+  </body>
+</html>
