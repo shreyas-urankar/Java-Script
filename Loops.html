@@ -1,0 +1,109 @@
+<!-- FOR LOOP -->
+
+
+<!-- Print 1 to 50 -->
+<!-- <body>
+    <div id="demo"> </div>
+    <script>
+        for (let count = 1; count<=50; count++)
+    {
+        document.getElementById("demo").innerHTML+="Shreyas Urankar<br>";
+    }
+    </script>
+</body> -->
+
+<!-- Calculate sum of 1 to 5 -->
+ <!-- <body>
+    <div id="sum"></div>
+    <div id="message"></div>
+    <script>
+    let sum =0;
+    for(let i=1; i<=5; i++)
+    {
+        sum=sum+i;
+    }
+    document.getElementById("sum").innerHTML="sum = " + sum;
+    document.getElementById("message").innerHTML="loop has ended."   
+    </script>
+ </body> -->
+
+ <!-- <body>
+    <div id="fullname"></div>
+    <div id="message"></div>
+    <script>
+    const person = {fname: "Shreyas", mname: "Prashant", lname: "Urankar", age: 21};
+    let fullname = "";
+    
+    for (let key in person) {
+        // Exclude the age property from being added to the full name
+        if (key !== "age") {
+            fullname += person[key] + " ";
+        }
+    }
+
+    // Display the fullname and message
+    document.getElementById("fullname").innerHTML = "Fullname = " + fullname.trim(); // Trim any extra space at the end
+    document.getElementById("message").innerHTML = "Loop has ended.";
+    </script>
+</body> -->
+
+
+ <!-- WHILE LOOP -->
+
+ <!-- <body>
+    <div id="demo"></div>
+    <script>
+        let i = 1;
+        while (i <= 5) {
+            // Append the new value of i without overwriting
+            document.getElementById("demo").innerHTML += "i = " + i + "<br>";
+            i++;
+        }
+    </script>
+</body> -->
+
+<!-- DO-WHILE LOOP -->
+
+<!-- <body>
+    <div id="demo"></div>
+    <script>
+        let i = 1;
+        do {
+            // Append the new value of i without overwriting
+            document.getElementById("demo").innerHTML += "i = " + i + "<br>";
+            i++;
+        }while(i<=10);
+    </script>
+</body> -->
+
+
+<!-- FOR-OF LOOP -->
+<!-- <body>
+    <div id="demo"></div>
+    <script>
+     let str = "Shreyas";
+     for (let i of str) {
+        // Append the value of 'i' instead of replacing the content
+        document.getElementById("demo").innerHTML += "i = " + i + "<br>";
+     }
+    </script>
+</body> -->
+
+
+<!-- FOR-IN LOOP -->
+<!-- <body>
+    <div id="demo"></div>
+    <script>
+    let student = {
+        name: "Shreyas Urankar",
+        age: 20,
+        cgpa: 7.5,
+        isPass: true
+    };
+
+    for (let i in student) {
+        // Append the property and its value to the div
+        document.getElementById("demo").innerHTML += i + ": " + student[i] + "<br>";
+    }
+    </script>
+</body> -->
