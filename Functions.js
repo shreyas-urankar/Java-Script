@@ -100,8 +100,17 @@
 // calcSquare(5); // This will calculate and display 25
 
 // 2)Filter
-let evenArr = [1, 2, 3, 4, 5, 6, 7];
-let filteredArr = evenArr.filter((val) => {
-    return val % 2 === 0;
+// let evenArr = [1, 2, 3, 4, 5, 6, 7];
+// let filteredArr = evenArr.filter((val) => {
+//     return val % 2 === 0;
+// });
+// document.getElementById("demo").innerHTML = filteredArr.join(", ");
+
+
+//...........................................................
+// 3)Reduce Method()
+let arr=[1,2,3,5,6,7];
+const output=arr.reduce((res, curr)=>{
+    return res + curr;
 });
-document.getElementById("demo").innerHTML = filteredArr.join(", ");
+document.getElementById("demo").innerHTML=output;
