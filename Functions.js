@@ -114,3 +114,9 @@ const output=arr.reduce((res, curr)=>{
     return res + curr;
 });
 document.getElementById("demo").innerHTML=output;
+
+// If previous value is greater than the current then return previous or return current(MAIN QUE IS TO PRINT THE LARGEST NUMBER IN THE ARRAY.)
+const output1=arr.reduce((prev, current)=>{
+    return prev>current ? prev:curr;
+});
+document.getElementById("demo").innerHTML=output1;
