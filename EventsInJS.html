@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event in JavaScript</title>
+    <link rel="stylesheet" href="EventsInJS.css">
 </head>
 <body>
     <p id="demo"></p>
-    <button onclick="document.getElementById('demo').innerHTML = 'button was clicked'">Click me!</button>
+    <button id="btn1">Btn1!</button>
+    <button ondblclick="document.getElementById('demo').innerHTML='button was clicked!', alert('hello! hello!')">Click me 2 times!</button>
+    <div onmouseover="document.getElementById('demo').innerHTML='You are inside div.'">
+        <p class="msg">This is a box</p>
+    </div>
+    
+
+    <!-- Create a toggle button that changes the screen to dark mode when clicked and light mode when clicked again. -->
+    <br>
+    <button id="mode">Change mode!</button>
+
+    <script src="EventsInJS.js"></script>
+
 </body>
 </html>
