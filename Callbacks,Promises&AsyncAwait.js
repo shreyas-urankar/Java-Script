@@ -38,18 +38,30 @@ function getData(dataId, getNextData) {
   }, 3000);
 }
 
-getData(1, () => {
-  getData(2, () => {
-    getData(3);
-  });
+//Promise chain
+getData(1).then((res)=>{
+    console.log(res);
+    getData(2).then(()=>{
+        console.log(res);
+    });
 });
 
+// Callback hell
+
+
+// getData(1, () => {
+//   getData(2, () => {
+//     getData(3);
+//   });
+// });
+
+// ......................................................................
 
 //Promises is for eventual compression of tasks. It is an object in JavaScript. It is a solution to callback hell.
-// let promise=new Promise((resolve, reject)=>{.........})
+//Syntax: let promise=new Promise((resolve, reject)=>{.........})
 
 // let promise= new Promise((resolve, reject)=>{
-//     console.log("I am a romise");
+//     console.log("I am a promise");
 //     reject("Success");
 // });
 
@@ -85,3 +97,59 @@ getData(1, () => {
 // promise.catch((err)=>{
 //     console.log("Rejected", err);
 // })
+
+// ............................................
+
+function asyncFunc1(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log("some data1");
+            resolve("Success");
+        }, 2000);
+    });
+}
+
+function asyncFunc2(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log("some data2");
+            resolve("Success");
+        }, 4000);
+    });
+}
+
+console.log("Fetching data1");
+asyncFunc1().then((res) =>{
+    console.log("Fetching data2");
+    asyncFunc2().then((re)=>{});
+
+});
+
+//...................................................
+// Async-Await
+
+// Async function myFynction{.....}
+// await pause the execution of its surrounding async function until the pomise is settled.
+
+async function hello(){
+    console.log("hello");
+}
+
+function api()
+{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log("Weather data");
+            resolve(200);
+        })
+    });
+}
+//Async-Await
+async function geAllData(){
+    console.log("Getting data1....");
+     await getData(1);
+     console.log("Getting data2....");
+     await getData(2);
+     console.log("Getting data3....");
+     await getData(3);
+}
